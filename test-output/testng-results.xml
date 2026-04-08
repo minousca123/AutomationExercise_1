@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-08T19:23:56 GMT+04:00" name="Automation Suite" finished-at="2026-04-08T19:24:59 GMT+04:00" duration-ms="63099">
+    <groups>
+    </groups>
+    <test started-at="2026-04-08T19:23:56 GMT+04:00" name="Regression Tests" finished-at="2026-04-08T19:24:59 GMT+04:00" duration-ms="63099">
+      <class name="tests.TC03_DeleteAccount">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.TC03_DeleteAccount@4a94ee4]" started-at="2026-04-08T19:24:20 GMT+04:00" name="setup" finished-at="2026-04-08T19:24:26 GMT+04:00" duration-ms="5925" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="deleteAccount()[pri:0, instance:tests.TC03_DeleteAccount@4a94ee4]" started-at="2026-04-08T19:24:26 GMT+04:00" name="deleteAccount" finished-at="2026-04-08T19:24:59 GMT+04:00" duration-ms="32589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TC03_DeleteAccount@4a94ee4]" started-at="2026-04-08T19:24:59 GMT+04:00" name="tearDown" finished-at="2026-04-08T19:24:59 GMT+04:00" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.TC03_DeleteAccount -->
+      <class name="tests.TC01_RegisterUser">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.TC01_RegisterUser@479d31f3]" started-at="2026-04-08T19:23:56 GMT+04:00" name="setup" finished-at="2026-04-08T19:24:00 GMT+04:00" duration-ms="3750" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerUser()[pri:0, instance:tests.TC01_RegisterUser@479d31f3]" started-at="2026-04-08T19:24:00 GMT+04:00" name="registerUser" finished-at="2026-04-08T19:24:20 GMT+04:00" duration-ms="20256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TC01_RegisterUser@479d31f3]" started-at="2026-04-08T19:24:20 GMT+04:00" name="tearDown" finished-at="2026-04-08T19:24:20 GMT+04:00" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.TC01_RegisterUser -->
+    </test> <!-- Regression Tests -->
+  </suite> <!-- Automation Suite -->
+</testng-results>
