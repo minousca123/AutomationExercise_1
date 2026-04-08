@@ -5,7 +5,9 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import utils.VignetteHandler;
 import utils.WaitUtils;
 
 //reusable actions 
@@ -23,6 +25,7 @@ public class BasePage {
 
 	protected void click(WebElement element) {
 		ActionHelper.click(wait.waitForClickable(element), getName(element));
+		
 	}
 
 	protected void type(WebElement element, String text) {
