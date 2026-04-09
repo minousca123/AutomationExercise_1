@@ -1,5 +1,8 @@
 package driver;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,21 +18,24 @@ public class DriverFactory {
 
             case "chrome":
             	ChromeOptions options = new ChromeOptions();
+            	Map<String, Object> prefs = new HashMap<>();
+            	prefs.put("profile.default_content_setting_values.notifications", 2);
+            	prefs.put("profile.default_content_setting_values.ads", 2);
 
+            	options.setExperimentalOption("prefs", prefs);
+
+            	// Disable ads + popups
             	options.addArguments("--disable-notifications");
             	options.addArguments("--disable-infobars");
             	options.addArguments("--disable-extensions");
             	options.addArguments("--disable-popup-blocking");
-            	options.addArguments("--disable-blink-features=AutomationControlled");
             	options.addArguments("--disable-gpu");
-
-            	// 🔥 THIS BLOCKS ADS
-            	options.addArguments("--disable-features=VizDisplayCompositor");
-
-            	// Optional but powerful:
-            	options.addArguments("--blink-settings=imagesEnabled=false");
-            //	options.addArguments("--headless=new");
+            	options.addArguments("--no-sandbox");
+            	options.addArguments("--disable-dev-shm-usage");
             	options.addArguments("--window-size=1920,1080");
+            	options.addArguments("--disable-blink-features=AutomationControlled");
+            	options.addArguments("--remote-allow-origins=*");
+            	
                 driver = new ChromeDriver(options);
                 break;
             case "firefox":

@@ -8,8 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitUtils {
-	private WebDriverWait wait;
-	private WebDriver driver;
+	protected  WebDriverWait wait;
+	protected  WebDriver driver;
 
 	public WaitUtils(WebDriver driver) {
 		this.driver = driver;

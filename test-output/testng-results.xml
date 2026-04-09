@@ -1,93 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-09T09:47:56 GMT+04:00" name="Automation Suite" finished-at="2026-04-09T09:48:41 GMT+04:00" duration-ms="45815">
+  <suite started-at="2026-04-09T10:08:02 GMT+04:00" name="Automation Suite" finished-at="2026-04-09T10:09:19 GMT+04:00" duration-ms="77480">
     <groups>
     </groups>
-    <test started-at="2026-04-09T09:47:56 GMT+04:00" name="Regression Tests" finished-at="2026-04-09T09:48:41 GMT+04:00" duration-ms="45815">
-      <class name="tests.TC01_RegisterUser">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.TC01_RegisterUser@7357a011]" started-at="2026-04-09T09:47:56 GMT+04:00" name="setup" finished-at="2026-04-09T09:48:04 GMT+04:00" duration-ms="8296" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="registerUser()[pri:0, instance:tests.TC01_RegisterUser@7357a011]" started-at="2026-04-09T09:48:04 GMT+04:00" name="registerUser" finished-at="2026-04-09T09:48:14 GMT+04:00" duration-ms="9657" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//b[text()='Enter Account Information']"}
-  (Session info: chrome=133.0.6943.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.40.0', revision: 'b3333f1'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a4887cc7768d86a9a006ba1517aa8d75, findElement {value=//b[text()='Enter Account Information'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\minousca\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53729}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53729/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a4887cc7768d86a9a006ba1517aa8d75]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//b[text()='Enter Account Information']"}
-  (Session info: chrome=133.0.6943.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.40.0', revision: 'b3333f1'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a4887cc7768d86a9a006ba1517aa8d75, findElement {value=//b[text()='Enter Account Information'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\minousca\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53729}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53729/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a4887cc7768d86a9a006ba1517aa8d75
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source)
-at pages.RegisterPage.isAccountInfoVisible(RegisterPage.java:43)
-at tests.TC01_RegisterUser.registerUser(TC01_RegisterUser.java:26)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-at java.base/java.lang.Thread.run(Thread.java:1516)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TC01_RegisterUser@7357a011]" started-at="2026-04-09T09:48:14 GMT+04:00" name="tearDown" finished-at="2026-04-09T09:48:14 GMT+04:00" duration-ms="542" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.TC01_RegisterUser -->
+    <test started-at="2026-04-09T10:08:02 GMT+04:00" name="Regression Tests" finished-at="2026-04-09T10:09:19 GMT+04:00" duration-ms="77480">
       <class name="tests.TC03_DeleteAccount">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.TC03_DeleteAccount@14f9390f]" started-at="2026-04-09T09:48:14 GMT+04:00" name="setup" finished-at="2026-04-09T09:48:17 GMT+04:00" duration-ms="2223" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.TC03_DeleteAccount@14f9390f]" started-at="2026-04-09T10:08:47 GMT+04:00" name="setup" finished-at="2026-04-09T10:08:54 GMT+04:00" duration-ms="6982" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -96,15 +16,34 @@ at java.base/java.lang.Thread.run(Thread.java:1516)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="deleteAccount()[pri:0, instance:tests.TC03_DeleteAccount@14f9390f]" started-at="2026-04-09T09:48:17 GMT+04:00" name="deleteAccount" finished-at="2026-04-09T09:48:41 GMT+04:00" duration-ms="24379" status="PASS">
+        <test-method signature="deleteAccount()[pri:0, instance:tests.TC03_DeleteAccount@14f9390f]" started-at="2026-04-09T10:08:54 GMT+04:00" name="deleteAccount" finished-at="2026-04-09T10:09:19 GMT+04:00" duration-ms="24356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteAccount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TC03_DeleteAccount@14f9390f]" started-at="2026-04-09T09:48:41 GMT+04:00" name="tearDown" finished-at="2026-04-09T09:48:41 GMT+04:00" duration-ms="388" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TC03_DeleteAccount@14f9390f]" started-at="2026-04-09T10:09:19 GMT+04:00" name="tearDown" finished-at="2026-04-09T10:09:19 GMT+04:00" duration-ms="497" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.TC03_DeleteAccount -->
+      <class name="tests.TC01_RegisterUser">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.TC01_RegisterUser@7357a011]" started-at="2026-04-09T10:08:02 GMT+04:00" name="setup" finished-at="2026-04-09T10:08:12 GMT+04:00" duration-ms="10056" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerUser()[pri:0, instance:tests.TC01_RegisterUser@7357a011]" started-at="2026-04-09T10:08:12 GMT+04:00" name="registerUser" finished-at="2026-04-09T10:08:47 GMT+04:00" duration-ms="35154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TC01_RegisterUser@7357a011]" started-at="2026-04-09T10:08:47 GMT+04:00" name="tearDown" finished-at="2026-04-09T10:08:47 GMT+04:00" duration-ms="345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.TC01_RegisterUser -->
     </test> <!-- Regression Tests -->
   </suite> <!-- Automation Suite -->
 </testng-results>

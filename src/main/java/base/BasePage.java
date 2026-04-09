@@ -13,25 +13,27 @@ import utils.WaitUtils;
 public class BasePage {
 	protected WebDriver driver;
 	protected WaitUtils wait;
+	 protected ActionHelper action;
 	protected final Logger log = LogManager.getLogger(this.getClass());
 
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
 		this.wait = new WaitUtils(driver);
+		this.action = new ActionHelper(driver);
 		PageFactory.initElements(driver, this);
 	}
 
 	protected void click(WebElement element) {
 	//	ActionHelper.click(wait.waitForClickable(element), getName(element));
 	    try {
-	        ActionHelper.click(wait.waitForClickable(element), getName(element));
+	        action.click(wait.waitForClickable(element), getName(element));
 	    } catch (org.openqa.selenium.ElementClickInterceptedException e) {
 
 	        // 🔥 Handle ads / overlays
 	        utils.VignetteHandler.handleIfPresent();
 
 	        // Retry click
-	        ActionHelper.click(wait.waitForClickable(element), getName(element));
+	        action.click(wait.waitForClickable(element), getName(element));
 	    }
 		
 	}

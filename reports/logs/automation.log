@@ -12,3 +12,32 @@
 2026-04-09 09:48:35 INFO  base.ActionHelper - Clicking: Delete Account
 2026-04-09 09:48:39 INFO  base.ActionHelper - Clicking: Continue
 2026-04-09 09:48:41 INFO  tests.TC03_DeleteAccount - ========== END TEST ==========
+2026-04-09 10:08:02 INFO  tests.TC01_RegisterUser - ========== START TEST ==========
+2026-04-09 10:08:17 INFO  base.ActionHelper - Clicked: [[ChromeDriver: chrome on windows (11cd24610e65ab47b750a80a1535b6a3)] -> xpath: //a[@href='/login']]
+2026-04-09 10:08:18 INFO  base.ActionHelper - Typing 'mini123' into: 
+2026-04-09 10:08:19 INFO  base.ActionHelper - Typing 'mini123@gmail.com' into: 
+2026-04-09 10:08:23 INFO  base.ActionHelper - Clicked: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Signup']'
+2026-04-09 10:08:24 INFO  pages.RegisterPage - Fill in Account Information
+2026-04-09 10:08:25 INFO  base.ActionHelper - Clicked: [[ChromeDriver: chrome on windows (11cd24610e65ab47b750a80a1535b6a3)] -> id: id_gender2]
+2026-04-09 10:08:25 INFO  base.ActionHelper - Typing 'mini123' into: password
+2026-04-09 10:08:27 INFO  base.ActionHelper - Clicked: [[ChromeDriver: chrome on windows (11cd24610e65ab47b750a80a1535b6a3)] -> id: newsletter]
+2026-04-09 10:08:28 INFO  base.ActionHelper - Clicked: [[ChromeDriver: chrome on windows (11cd24610e65ab47b750a80a1535b6a3)] -> id: optin]
+2026-04-09 10:08:29 INFO  base.ActionHelper - Typing 'mini123' into: first_name
+2026-04-09 10:08:30 INFO  base.ActionHelper - Typing 'Cards' into: last_name
+2026-04-09 10:08:31 INFO  base.ActionHelper - Typing 'QA Corp' into: company
+2026-04-09 10:08:31 INFO  base.ActionHelper - Typing 'Abu Dhabi' into: address1
+2026-04-09 10:08:32 INFO  base.ActionHelper - Typing 'UAE' into: state
+2026-04-09 10:08:33 INFO  base.ActionHelper - Typing 'Abu Dhabi' into: city
+2026-04-09 10:08:34 INFO  base.ActionHelper - Typing '00000' into: zipcode
+2026-04-09 10:08:35 INFO  base.ActionHelper - Typing '1234567890' into: mobile_number
+2026-04-09 10:08:42 INFO  base.ActionHelper - Clicked: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Create Account']'
+2026-04-09 10:08:43 INFO  base.ActionHelper - Clicked: [[ChromeDriver: chrome on windows (11cd24610e65ab47b750a80a1535b6a3)] -> xpath: //a[text()='Continue']]
+2026-04-09 10:08:47 INFO  tests.TC01_RegisterUser - ========== END TEST ==========
+2026-04-09 10:08:47 INFO  tests.TC03_DeleteAccount - ========== START TEST ==========
+2026-04-09 10:09:00 INFO  base.ActionHelper - Clicked: [[ChromeDriver: chrome on windows (83682afed9aa9bf57bd3480ad4cc4af6)] -> xpath: //a[@href='/login']]
+2026-04-09 10:09:02 INFO  base.ActionHelper - Typing 'mini123@gmail.com' into: 
+2026-04-09 10:09:03 INFO  base.ActionHelper - Typing 'mini123' into: 
+2026-04-09 10:09:09 INFO  base.ActionHelper - Clicked: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Login']'
+2026-04-09 10:09:11 INFO  base.ActionHelper - Clicked: [[ChromeDriver: chrome on windows (83682afed9aa9bf57bd3480ad4cc4af6)] -> xpath: //a[@href='/delete_account']]
+2026-04-09 10:09:19 INFO  base.ActionHelper - Clicked: Proxy element for: DefaultElementLocator 'By.xpath: //a[text()='Continue']'
+2026-04-09 10:09:19 INFO  tests.TC03_DeleteAccount - ========== END TEST ==========

@@ -12,7 +12,7 @@ public class AccountPage extends BasePage {
 		super(driver);
 	}
 
-	@FindBy(xpath = "//a[contains(text(),' Logged in as ')]")
+	@FindBy(xpath = "//a[contains(text(),' Logged in as')]")
 	WebElement loggedInText;
 
 	@FindBy(xpath = "//a[@href='/delete_account']")
