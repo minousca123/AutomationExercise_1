@@ -22,11 +22,11 @@ public class WaitUtils {
 	}
 
 	public WebElement waitForClickable(WebElement element) {
-		/*
-		 * VignetteHandler.handleIfPresent(); return
-		 * wait.until(ExpectedConditions.elementToBeClickable(element));
-		 */
-		 WebElement clickableElement = wait.until(ExpectedConditions.elementToBeClickable(element));
+		
+		//  VignetteHandler.handleIfPresent(); 
+		  return wait.until(ExpectedConditions.elementToBeClickable(element));
+		 
+		/* WebElement clickableElement = wait.until(ExpectedConditions.elementToBeClickable(element));
 
 		if (driver.getCurrentUrl().contains("google_vignette")) {
 			VignetteHandler.handleIfPresent();
@@ -42,5 +42,6 @@ public class WaitUtils {
 		}
 		
 		return clickableElement;
+	}*/
 	}
 }

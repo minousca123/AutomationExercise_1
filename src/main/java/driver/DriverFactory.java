@@ -14,12 +14,21 @@ public class DriverFactory {
         switch (browser.toLowerCase()) {
 
             case "chrome":
-                ChromeOptions options = new ChromeOptions();
-                options.addArguments("--disable-notifications");
-                options.addArguments("--disable-geolocation");
-                options.addArguments("--disable-infobars");
-                options.addArguments("--disable-extensions");
-                options.addArguments("--disable-popup-blocking");
+            	ChromeOptions options = new ChromeOptions();
+
+            	options.addArguments("--disable-notifications");
+            	options.addArguments("--disable-infobars");
+            	options.addArguments("--disable-extensions");
+            	options.addArguments("--disable-popup-blocking");
+            	options.addArguments("--disable-gpu");
+
+            	// 🔥 THIS BLOCKS ADS
+            	options.addArguments("--disable-features=VizDisplayCompositor");
+
+            	// Optional but powerful:
+            	options.addArguments("--blink-settings=imagesEnabled=false");
+            	options.addArguments("--headless=new");
+            	options.addArguments("--window-size=1920,1080");
                 driver = new ChromeDriver(options);
                 break;
             case "firefox":
