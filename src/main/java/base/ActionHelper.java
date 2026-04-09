@@ -10,64 +10,91 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import reporting.ExtentManager;
+import com.aventstack.extentreports.MediaEntityBuilder;
+
+import reporting.ExtentTestManager;
 import utils.ScreenshotUtil;
 
 public class ActionHelper{
 
-	  private WebDriver driver;
+	 private WebDriver driver;
 	    private WebDriverWait wait;
 	    private static final Logger log = LogManager.getLogger(ActionHelper.class);
-	    
+
 	    public ActionHelper(WebDriver driver) {
 	        this.driver = driver;
 	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	    }
-	public  void click(WebElement element, String name) {
-		try {
-	        // Wait until clickable
-	        wait.until(ExpectedConditions.elementToBeClickable(element));
 
-	        // Scroll to center (VERY IMPORTANT for Jenkins)
-	        ((JavascriptExecutor) driver)
-	                .executeScript("arguments[0].scrollIntoView({block:'center'});", element);
+	    public void click(WebElement element, String name) {
+	        try {
+	            wait.until(ExpectedConditions.elementToBeClickable(element));
 
-	       // Thread.sleep(300);
+	            ((JavascriptExecutor) driver)
+	                    .executeScript("arguments[0].scrollIntoView({block:'center'});", element);
 
-	        // Try normal click
-	        element.click();
+	            element.click();
 
-	        log.info("Clicking: " + name); ExtentManager.logStep("Click: " + name);
+	            log.info("Clicked: {}", name);
+	            ExtentTestManager.getTest().info("Clicked: " + name);
 
-	    } catch (Exception e) {
+	        } catch (Exception e) {
 
-	        log.warn("Normal click failed, trying JS click: " + element);
+	            log.warn("Normal click failed, trying JS click: {}", name);
 
-	        // ✅ BEST FALLBACK → JS CLICK (bypasses iframe overlay)
-	        ((JavascriptExecutor) driver)
-	                .executeScript("arguments[0].click();", element);
+	            try {
+	                ((JavascriptExecutor) driver)
+	                        .executeScript("arguments[0].click();", element);
 
-	        log.info("Clicked using JS: " + element);
+	                log.info("Clicked using JS: {}", name);
+	                ExtentTestManager.getTest().info("Clicked using JS: " + name);
+
+	            } catch (Exception ex) {
+
+	                log.error("Click failed completely: {}", name, ex);
+
+	                String path = ScreenshotUtil.captureScreenshot(driver, "fail_click_" + System.currentTimeMillis());
+
+	                try {
+	                    ExtentTestManager.getTest().fail(
+	                            "Click failed: " + name,
+	                            MediaEntityBuilder.createScreenCaptureFromPath(path).build()
+	                    );
+	                } catch (Exception mediaEx) {
+	                    ExtentTestManager.getTest().fail("Click failed: " + name);
+	                }
+
+	                throw ex;
+	            }
+	        }
 	    }
-    }
 
-    public static void type(WebElement element, String text, String name) {
+	    public void type(WebElement element, String text, String name) {
+	        try {
+	            wait.until(ExpectedConditions.visibilityOf(element));
 
-        log.info("Typing '" + text + "' into: " + name);
-        ExtentManager.logStep("Type '" + text + "' into: " + name);
+	            element.clear();
+	            element.sendKeys(text);
 
-        try {
-            element.clear();
-            element.sendKeys(text);
-        } catch (Exception e) {
+	            log.info("Typed '{}' into {}", text, name);
+	            ExtentTestManager.getTest().info("Typed '" + text + "' into " + name);
 
-            log.error("Typing failed: " + name, e);
-            ExtentManager.logFail("Typing failed: " + name);
+	        } catch (Exception e) {
 
-            String path = ScreenshotUtil.captureScreenshot("fail_type_" + System.currentTimeMillis());
-            ExtentManager.attachScreenshot(path);
+	            log.error("Typing failed: {}", name, e);
 
-            throw e;
-        }
-    }
+	            String path = ScreenshotUtil.captureScreenshot(driver, "fail_type_" + System.currentTimeMillis());
+
+	            try {
+	                ExtentTestManager.getTest().fail(
+	                        "Typing failed: " + name,
+	                        MediaEntityBuilder.createScreenCaptureFromPath(path).build()
+	                );
+	            } catch (Exception mediaEx) {
+	                ExtentTestManager.getTest().fail("Typing failed: " + name);
+	            }
+
+	            throw e;
+	        }
+	    }
 }

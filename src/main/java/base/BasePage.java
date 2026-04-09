@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
-import reporting.ExtentManager;
 import utils.WaitUtils;
 
 //reusable actions 
@@ -40,7 +39,7 @@ public class BasePage {
 	}
 
 	protected void type(WebElement element, String text) {
-		ActionHelper.type(wait.waitForVisible(element), text, getName(element));
+		action.type(wait.waitForVisible(element), text, getName(element));
 	}
 
 	protected boolean isVisible(WebElement element, String name) {

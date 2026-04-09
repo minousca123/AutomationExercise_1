@@ -110,3 +110,40 @@
 2026-04-09 10:57:41 INFO  pages.DeleteAccountPage - Account Deleted! is visible
 2026-04-09 10:57:46 INFO  base.ActionHelper - Clicking: Continue
 2026-04-09 10:57:46 INFO  tests.TC03_DeleteAccount - ========== END TEST ==========
+2026-04-09 11:29:59 INFO  tests.TC01_RegisterUser - ========== START TEST ==========
+2026-04-09 11:30:12 INFO  pages.HomePage - Home page logo is visible
+2026-04-09 11:30:17 INFO  base.ActionHelper - Clicked: Signup / Login
+2026-04-09 11:30:18 INFO  pages.LoginPage - New User Signup! is visible
+2026-04-09 11:30:19 INFO  base.ActionHelper - Typed 'mini123' into Name
+2026-04-09 11:30:20 INFO  base.ActionHelper - Typed 'mini123@gmail.com' into Email Address
+2026-04-09 11:30:22 INFO  base.ActionHelper - Clicked: Signup
+2026-04-09 11:30:24 INFO  pages.RegisterPage - Fill in Account Information
+2026-04-09 11:30:25 INFO  base.ActionHelper - Clicked: title
+2026-04-09 11:30:26 INFO  base.ActionHelper - Typed 'mini123' into password
+2026-04-09 11:30:27 INFO  base.ActionHelper - Clicked: newsletter
+2026-04-09 11:30:27 INFO  base.ActionHelper - Clicked: optin
+2026-04-09 11:30:28 INFO  base.ActionHelper - Typed 'mini123' into first_name
+2026-04-09 11:30:29 INFO  base.ActionHelper - Typed 'Cards' into last_name
+2026-04-09 11:30:30 INFO  base.ActionHelper - Typed 'QA Corp' into company
+2026-04-09 11:30:31 INFO  base.ActionHelper - Typed 'Abu Dhabi' into address1
+2026-04-09 11:30:32 INFO  base.ActionHelper - Typed 'UAE' into state
+2026-04-09 11:30:33 INFO  base.ActionHelper - Typed 'Abu Dhabi' into city
+2026-04-09 11:30:34 INFO  base.ActionHelper - Typed '00000' into zipcode
+2026-04-09 11:30:36 INFO  base.ActionHelper - Typed '1234567890' into mobile_number
+2026-04-09 11:30:42 INFO  base.ActionHelper - Clicked: Create Account
+2026-04-09 11:30:43 INFO  pages.RegisterPage - Account Created Header is visible
+2026-04-09 11:30:43 INFO  base.ActionHelper - Clicked: Continue
+2026-04-09 11:30:48 INFO  pages.AccountPage - Logged in as is visible
+2026-04-09 11:30:49 INFO  tests.TC01_RegisterUser - ========== END TEST ==========
+2026-04-09 11:30:49 INFO  tests.TC03_DeleteAccount - ========== START TEST ==========
+2026-04-09 11:30:58 INFO  pages.HomePage - Home page logo is visible
+2026-04-09 11:31:04 INFO  base.ActionHelper - Clicked: Signup / Login
+2026-04-09 11:31:04 INFO  pages.LoginPage - Login to your account is visible
+2026-04-09 11:31:05 INFO  base.ActionHelper - Typed 'mini123@gmail.com' into Email Address
+2026-04-09 11:31:06 INFO  base.ActionHelper - Typed 'mini123' into Password
+2026-04-09 11:31:14 INFO  base.ActionHelper - Clicked: Login
+2026-04-09 11:31:15 INFO  pages.AccountPage - Logged in as is visible
+2026-04-09 11:31:16 INFO  base.ActionHelper - Clicked: Delete Account
+2026-04-09 11:31:22 INFO  pages.DeleteAccountPage - Account Deleted! is visible
+2026-04-09 11:31:27 INFO  base.ActionHelper - Clicked: Continue
+2026-04-09 11:31:28 INFO  tests.TC03_DeleteAccount - ========== END TEST ==========
