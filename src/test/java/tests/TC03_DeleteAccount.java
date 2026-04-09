@@ -25,7 +25,6 @@ public class TC03_DeleteAccount extends BaseTest {
 		Assert.assertTrue(pom.getDeletePage().isAccountDeleted(), "Account not deleted");
 		pom.getDeletePage().clickContinueBtn();
 		
-		Assert.fail();
 	}
 
 }
