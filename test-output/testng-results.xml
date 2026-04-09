@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-08T22:31:23 GMT+04:00" name="Automation Suite" finished-at="2026-04-08T22:32:26 GMT+04:00" duration-ms="63155">
+  <suite started-at="2026-04-09T09:08:45 GMT+04:00" name="Automation Suite" finished-at="2026-04-09T09:09:36 GMT+04:00" duration-ms="50808">
     <groups>
     </groups>
-    <test started-at="2026-04-08T22:31:23 GMT+04:00" name="Regression Tests" finished-at="2026-04-08T22:32:26 GMT+04:00" duration-ms="63155">
+    <test started-at="2026-04-09T09:08:45 GMT+04:00" name="Regression Tests" finished-at="2026-04-09T09:09:36 GMT+04:00" duration-ms="50808">
       <class name="tests.TC03_DeleteAccount">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.TC03_DeleteAccount@4a94ee4]" started-at="2026-04-08T22:32:03 GMT+04:00" name="setup" finished-at="2026-04-08T22:32:10 GMT+04:00" duration-ms="6766" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.TC03_DeleteAccount@4a94ee4]" started-at="2026-04-09T09:09:18 GMT+04:00" name="setup" finished-at="2026-04-09T09:09:25 GMT+04:00" duration-ms="6639" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -16,17 +16,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="deleteAccount()[pri:0, instance:tests.TC03_DeleteAccount@4a94ee4]" started-at="2026-04-08T22:32:10 GMT+04:00" name="deleteAccount" finished-at="2026-04-08T22:32:26 GMT+04:00" duration-ms="16468" status="PASS">
+        <test-method signature="deleteAccount()[pri:0, instance:tests.TC03_DeleteAccount@4a94ee4]" started-at="2026-04-09T09:09:25 GMT+04:00" name="deleteAccount" finished-at="2026-04-09T09:09:36 GMT+04:00" duration-ms="11188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteAccount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TC03_DeleteAccount@4a94ee4]" started-at="2026-04-08T22:32:26 GMT+04:00" name="tearDown" finished-at="2026-04-08T22:32:26 GMT+04:00" duration-ms="357" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TC03_DeleteAccount@4a94ee4]" started-at="2026-04-09T09:09:36 GMT+04:00" name="tearDown" finished-at="2026-04-09T09:09:36 GMT+04:00" duration-ms="347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.TC03_DeleteAccount -->
       <class name="tests.TC01_RegisterUser">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.TC01_RegisterUser@479d31f3]" started-at="2026-04-08T22:31:23 GMT+04:00" name="setup" finished-at="2026-04-08T22:31:33 GMT+04:00" duration-ms="9474" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.TC01_RegisterUser@479d31f3]" started-at="2026-04-09T09:08:45 GMT+04:00" name="setup" finished-at="2026-04-09T09:08:53 GMT+04:00" duration-ms="7731" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -35,11 +35,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="registerUser()[pri:0, instance:tests.TC01_RegisterUser@479d31f3]" started-at="2026-04-08T22:31:33 GMT+04:00" name="registerUser" finished-at="2026-04-08T22:32:02 GMT+04:00" duration-ms="29531" status="PASS">
+        <test-method signature="registerUser()[pri:0, instance:tests.TC01_RegisterUser@479d31f3]" started-at="2026-04-09T09:08:53 GMT+04:00" name="registerUser" finished-at="2026-04-09T09:09:17 GMT+04:00" duration-ms="24397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TC01_RegisterUser@479d31f3]" started-at="2026-04-08T22:32:02 GMT+04:00" name="tearDown" finished-at="2026-04-08T22:32:03 GMT+04:00" duration-ms="494" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TC01_RegisterUser@479d31f3]" started-at="2026-04-09T09:09:17 GMT+04:00" name="tearDown" finished-at="2026-04-09T09:09:18 GMT+04:00" duration-ms="423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
