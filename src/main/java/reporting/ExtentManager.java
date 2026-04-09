@@ -4,21 +4,23 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class ExtentManager {
-	 private static ExtentReports extent;
+	private static ExtentReports extent;
 
-	    public static ExtentReports getInstance() {
+	public static ExtentReports getInstance() {
 
-	        if (extent == null) {
-	            String reportPath = System.getProperty("user.dir") + "/reports/extent-report.html";
+		if (extent == null) {
 
-	            ExtentSparkReporter spark = new ExtentSparkReporter(reportPath);
-	            spark.config().setReportName("Automation Report");
-	            spark.config().setDocumentTitle("Test Results");
+			String reportPath = System.getProperty("user.dir") + "/reports/extent-report.html";
 
-	            extent = new ExtentReports();
-	            extent.attachReporter(spark);
-	        }
+			ExtentSparkReporter spark = new ExtentSparkReporter(reportPath);
 
-	        return extent;
-	    }
+			spark.config().setReportName("Automation Report");
+			spark.config().setDocumentTitle("Test Results");
+
+			extent = new ExtentReports();
+			extent.attachReporter(spark);
+		}
+
+		return extent;
+	}
 }

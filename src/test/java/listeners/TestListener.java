@@ -15,42 +15,51 @@ import utils.ScreenshotUtil;
 
 public class TestListener implements ITestListener {
 
-	@Override
-	public void onStart(ITestContext context) {
-		ExtentManager.getInstance();
-	}
+	  @Override
+	    public void onStart(ITestContext context) {
+	        ExtentManager.getInstance();
+	    }
 
-	@Override
-	public void onTestStart(ITestResult result) {
-		ExtentTest test = ExtentManager.getInstance().createTest(result.getMethod().getMethodName());
+	    @Override
+	    public void onTestStart(ITestResult result) {
 
-		ExtentTestManager.setTest(test);
-	}
+	        ExtentTest test = ExtentManager.getInstance()
+	                .createTest(result.getMethod().getMethodName());
 
-	@Override
-	public void onTestSuccess(ITestResult result) {
-		ExtentTestManager.getTest().pass("Test Passed");
-	}
+	        ExtentTestManager.setTest(test);
+	    }
 
-	@Override
-	public void onTestFailure(ITestResult result) {
+	    @Override
+	    public void onTestSuccess(ITestResult result) {
+	        ExtentTestManager.getTest().pass("Test Passed");
+	    }
 
-		WebDriver driver = DriverManager.getDriver();
+	    @Override
+	    public void onTestFailure(ITestResult result) {
 
-		String screenshotPath = ScreenshotUtil.captureScreenshot(driver, result.getMethod().getMethodName());
+	        String screenshotPath = ScreenshotUtil.captureScreenshot(
+	                DriverManager.getDriver(),
+	                result.getMethod().getMethodName()
+	        );
 
-		ExtentTestManager.getTest().fail(result.getThrowable(),
-				MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
-	}
+	        try {
+	            ExtentTestManager.getTest().fail(
+	                    result.getThrowable(),
+	                    MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build()
+	            );
+	        } catch (Exception e) {
+	            ExtentTestManager.getTest().fail("Screenshot attach failed");
+	        }
+	    }
 
-	@Override
-	public void onTestSkipped(ITestResult result) {
-		ExtentTestManager.getTest().skip("Test Skipped");
-	}
+	    @Override
+	    public void onTestSkipped(ITestResult result) {
+	        ExtentTestManager.getTest().skip("Test Skipped");
+	    }
 
-	@Override
-	public void onFinish(ITestContext context) {
-		ExtentManager.getInstance().flush();
-		ExtentTestManager.unload();
-	}
+	    @Override
+	    public void onFinish(ITestContext context) {
+	        ExtentManager.getInstance().flush();
+	        ExtentTestManager.unload();
+	    }
 }

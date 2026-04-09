@@ -3,7 +3,7 @@
 <suite name="Automation Suite" parallel="tests" thread-count="2">
 
     <listeners>
-        <listener class-name="listeners.TestListener"/>
+    <listener class-name="listeners.TestListener"/>
         <listener class-name="listeners.RetryTransformer"/>
     </listeners>
 
