@@ -20,6 +20,7 @@ public class DriverFactory {
             	options.addArguments("--disable-infobars");
             	options.addArguments("--disable-extensions");
             	options.addArguments("--disable-popup-blocking");
+            	options.addArguments("--disable-blink-features=AutomationControlled");
             	options.addArguments("--disable-gpu");
 
             	// 🔥 THIS BLOCKS ADS

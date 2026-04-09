@@ -8,6 +8,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import utils.ScreenshotUtil;
+
 public class ExtentManager {
 
 
@@ -61,14 +63,14 @@ public class ExtentManager {
     }
     
     public static void logStepWithScreenshot(String message) {
-        if (getTest() != null) {
-            try {
-                String path = utils.ScreenshotUtil.captureScreenshot("step_" + System.currentTimeMillis());
-                getTest().info(message).addScreenCaptureFromPath(path);
-            } catch (Exception e) {
-                getTest().info(message);
-            }
-        }
+    	 if (getTest() != null) {
+    	        try {
+    	            String path = ScreenshotUtil.captureScreenshot("step_" + System.currentTimeMillis());
+    	            getTest().info(message).addScreenCaptureFromPath(path);
+    	        } catch (Exception e) {
+    	            getTest().info(message);
+    	        }
+    	    }
     }
 
     // Pass

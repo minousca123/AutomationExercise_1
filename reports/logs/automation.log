@@ -1,0 +1,14 @@
+2026-04-09 09:47:56 INFO  tests.TC01_RegisterUser - ========== START TEST ==========
+2026-04-09 09:48:06 INFO  base.ActionHelper - Clicking: Signup / Login
+2026-04-09 09:48:10 INFO  base.ActionHelper - Typing 'mini123' into: 
+2026-04-09 09:48:11 INFO  base.ActionHelper - Typing 'mini123@gmail.com' into: 
+2026-04-09 09:48:12 INFO  base.ActionHelper - Clicking: Signup
+2026-04-09 09:48:14 INFO  tests.TC01_RegisterUser - ========== END TEST ==========
+2026-04-09 09:48:14 INFO  tests.TC03_DeleteAccount - ========== START TEST ==========
+2026-04-09 09:48:22 INFO  base.ActionHelper - Clicking: Signup / Login
+2026-04-09 09:48:27 INFO  base.ActionHelper - Typing 'mini123@gmail.com' into: 
+2026-04-09 09:48:29 INFO  base.ActionHelper - Typing 'mini123' into: 
+2026-04-09 09:48:29 INFO  base.ActionHelper - Clicking: Login
+2026-04-09 09:48:35 INFO  base.ActionHelper - Clicking: Delete Account
+2026-04-09 09:48:39 INFO  base.ActionHelper - Clicking: Continue
+2026-04-09 09:48:41 INFO  tests.TC03_DeleteAccount - ========== END TEST ==========

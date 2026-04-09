@@ -18,15 +18,10 @@ public class TestListener implements ITestListener {
 	    }
 
 	    public void onTestFailure(ITestResult result) {
-	        ExtentManager.logFail(result.getThrowable().getMessage());
+	    	 ExtentManager.logFail(result.getThrowable().getMessage());
 
-	        String path = ScreenshotUtil.captureScreenshot(result.getName());
-
-	        try {
-	            ExtentManager.attachScreenshot(path);
-	        } catch (Exception e) {
-	            e.printStackTrace();
-	        }
+	    	    String path = ScreenshotUtil.captureScreenshot(result.getName());
+	    	    ExtentManager.attachScreenshot(path);
 	    }
 
 	    public void onFinish(ITestContext context) {

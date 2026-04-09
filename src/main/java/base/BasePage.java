@@ -22,7 +22,17 @@ public class BasePage {
 	}
 
 	protected void click(WebElement element) {
-		ActionHelper.click(wait.waitForClickable(element), getName(element));
+	//	ActionHelper.click(wait.waitForClickable(element), getName(element));
+	    try {
+	        ActionHelper.click(wait.waitForClickable(element), getName(element));
+	    } catch (org.openqa.selenium.ElementClickInterceptedException e) {
+
+	        // 🔥 Handle ads / overlays
+	        utils.VignetteHandler.handleIfPresent();
+
+	        // Retry click
+	        ActionHelper.click(wait.waitForClickable(element), getName(element));
+	    }
 		
 	}
 
