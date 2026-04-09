@@ -19,7 +19,7 @@ public class AccountPage extends BasePage {
 	WebElement deleteAccountBtn;
 
 	public boolean isUserLoggedIn() {
-		return isVisible(loggedInText);
+		return isVisible(loggedInText, "Logged in as");
 	}
 
 	public void clickDeleteAccount() {

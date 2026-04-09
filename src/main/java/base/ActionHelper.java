@@ -24,21 +24,6 @@ public class ActionHelper{
 	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	    }
 	public  void click(WebElement element, String name) {
-		
-		/*
-		 * log.info("Clicking: " + name); ExtentManager.logStep("Click: " + name);
-		 * 
-		 * try { el.click(); } catch (Exception e) {
-		 * 
-		 * log.error("Click failed: " + name, e); ExtentManager.logFail("Click failed: "
-		 * + name);
-		 * 
-		 * String path = ScreenshotUtil.captureScreenshot("fail_click_" +
-		 * System.currentTimeMillis()); ExtentManager.attachScreenshot(path);
-		 * 
-		 * throw e; }
-		 */
-		
 		try {
 	        // Wait until clickable
 	        wait.until(ExpectedConditions.elementToBeClickable(element));
@@ -47,12 +32,12 @@ public class ActionHelper{
 	        ((JavascriptExecutor) driver)
 	                .executeScript("arguments[0].scrollIntoView({block:'center'});", element);
 
-	        Thread.sleep(300);
+	       // Thread.sleep(300);
 
 	        // Try normal click
 	        element.click();
 
-	        log.info("Clicked: " + element);
+	        log.info("Clicking: " + name); ExtentManager.logStep("Click: " + name);
 
 	    } catch (Exception e) {
 

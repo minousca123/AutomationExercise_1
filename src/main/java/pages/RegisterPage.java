@@ -78,7 +78,7 @@ public class RegisterPage extends BasePage{
     }
 	
 	public boolean isAccountCreated() {
-		return isVisible(accountCreatedHeader);
+		return isVisible(accountCreatedHeader, "Account Created Header");
 	}
 	
 	public void clickContinue() {

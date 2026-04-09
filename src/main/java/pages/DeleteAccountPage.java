@@ -19,7 +19,7 @@ public class DeleteAccountPage extends BasePage{
 	WebElement continueBtn;
 	
     public boolean isAccountDeleted() {
-    	return isVisible(deleteMsg);
+    	return isVisible(deleteMsg, "Account Deleted!");
       
     }
     

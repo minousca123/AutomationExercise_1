@@ -47,7 +47,7 @@ public class VignetteHandler {
 
 		            if (src != null && src.contains("googleads")) {
 
-		                System.out.println("⚠️ Ad iframe detected");
+		              //  System.out.println("⚠️ Ad iframe detected");
 
 		                driver.switchTo().frame(frame);
 

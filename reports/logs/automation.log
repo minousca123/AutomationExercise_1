@@ -1,43 +1,112 @@
-2026-04-09 09:47:56 INFO  tests.TC01_RegisterUser - ========== START TEST ==========
-2026-04-09 09:48:06 INFO  base.ActionHelper - Clicking: Signup / Login
-2026-04-09 09:48:10 INFO  base.ActionHelper - Typing 'mini123' into: 
-2026-04-09 09:48:11 INFO  base.ActionHelper - Typing 'mini123@gmail.com' into: 
-2026-04-09 09:48:12 INFO  base.ActionHelper - Clicking: Signup
-2026-04-09 09:48:14 INFO  tests.TC01_RegisterUser - ========== END TEST ==========
-2026-04-09 09:48:14 INFO  tests.TC03_DeleteAccount - ========== START TEST ==========
-2026-04-09 09:48:22 INFO  base.ActionHelper - Clicking: Signup / Login
-2026-04-09 09:48:27 INFO  base.ActionHelper - Typing 'mini123@gmail.com' into: 
-2026-04-09 09:48:29 INFO  base.ActionHelper - Typing 'mini123' into: 
-2026-04-09 09:48:29 INFO  base.ActionHelper - Clicking: Login
-2026-04-09 09:48:35 INFO  base.ActionHelper - Clicking: Delete Account
-2026-04-09 09:48:39 INFO  base.ActionHelper - Clicking: Continue
-2026-04-09 09:48:41 INFO  tests.TC03_DeleteAccount - ========== END TEST ==========
-2026-04-09 10:08:02 INFO  tests.TC01_RegisterUser - ========== START TEST ==========
-2026-04-09 10:08:17 INFO  base.ActionHelper - Clicked: [[ChromeDriver: chrome on windows (11cd24610e65ab47b750a80a1535b6a3)] -> xpath: //a[@href='/login']]
-2026-04-09 10:08:18 INFO  base.ActionHelper - Typing 'mini123' into: 
-2026-04-09 10:08:19 INFO  base.ActionHelper - Typing 'mini123@gmail.com' into: 
-2026-04-09 10:08:23 INFO  base.ActionHelper - Clicked: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Signup']'
-2026-04-09 10:08:24 INFO  pages.RegisterPage - Fill in Account Information
-2026-04-09 10:08:25 INFO  base.ActionHelper - Clicked: [[ChromeDriver: chrome on windows (11cd24610e65ab47b750a80a1535b6a3)] -> id: id_gender2]
-2026-04-09 10:08:25 INFO  base.ActionHelper - Typing 'mini123' into: password
-2026-04-09 10:08:27 INFO  base.ActionHelper - Clicked: [[ChromeDriver: chrome on windows (11cd24610e65ab47b750a80a1535b6a3)] -> id: newsletter]
-2026-04-09 10:08:28 INFO  base.ActionHelper - Clicked: [[ChromeDriver: chrome on windows (11cd24610e65ab47b750a80a1535b6a3)] -> id: optin]
-2026-04-09 10:08:29 INFO  base.ActionHelper - Typing 'mini123' into: first_name
-2026-04-09 10:08:30 INFO  base.ActionHelper - Typing 'Cards' into: last_name
-2026-04-09 10:08:31 INFO  base.ActionHelper - Typing 'QA Corp' into: company
-2026-04-09 10:08:31 INFO  base.ActionHelper - Typing 'Abu Dhabi' into: address1
-2026-04-09 10:08:32 INFO  base.ActionHelper - Typing 'UAE' into: state
-2026-04-09 10:08:33 INFO  base.ActionHelper - Typing 'Abu Dhabi' into: city
-2026-04-09 10:08:34 INFO  base.ActionHelper - Typing '00000' into: zipcode
-2026-04-09 10:08:35 INFO  base.ActionHelper - Typing '1234567890' into: mobile_number
-2026-04-09 10:08:42 INFO  base.ActionHelper - Clicked: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Create Account']'
-2026-04-09 10:08:43 INFO  base.ActionHelper - Clicked: [[ChromeDriver: chrome on windows (11cd24610e65ab47b750a80a1535b6a3)] -> xpath: //a[text()='Continue']]
-2026-04-09 10:08:47 INFO  tests.TC01_RegisterUser - ========== END TEST ==========
-2026-04-09 10:08:47 INFO  tests.TC03_DeleteAccount - ========== START TEST ==========
-2026-04-09 10:09:00 INFO  base.ActionHelper - Clicked: [[ChromeDriver: chrome on windows (83682afed9aa9bf57bd3480ad4cc4af6)] -> xpath: //a[@href='/login']]
-2026-04-09 10:09:02 INFO  base.ActionHelper - Typing 'mini123@gmail.com' into: 
-2026-04-09 10:09:03 INFO  base.ActionHelper - Typing 'mini123' into: 
-2026-04-09 10:09:09 INFO  base.ActionHelper - Clicked: Proxy element for: DefaultElementLocator 'By.xpath: //button[text()='Login']'
-2026-04-09 10:09:11 INFO  base.ActionHelper - Clicked: [[ChromeDriver: chrome on windows (83682afed9aa9bf57bd3480ad4cc4af6)] -> xpath: //a[@href='/delete_account']]
-2026-04-09 10:09:19 INFO  base.ActionHelper - Clicked: Proxy element for: DefaultElementLocator 'By.xpath: //a[text()='Continue']'
-2026-04-09 10:09:19 INFO  tests.TC03_DeleteAccount - ========== END TEST ==========
+2026-04-09 10:42:18 INFO  tests.TC01_RegisterUser - ========== START TEST ==========
+2026-04-09 10:42:28 INFO  pages.HomePage - Home page logo is visible
+2026-04-09 10:42:31 INFO  base.ActionHelper - Clicking: Signup / Login
+2026-04-09 10:42:34 INFO  pages.LoginPage - New User Signup! is visible
+2026-04-09 10:42:35 INFO  base.ActionHelper - Typing 'mini123' into: 
+2026-04-09 10:42:35 INFO  base.ActionHelper - Typing 'mini123@gmail.com' into: 
+2026-04-09 10:42:40 INFO  base.ActionHelper - Clicking: Signup
+2026-04-09 10:42:43 INFO  pages.RegisterPage - Fill in Account Information
+2026-04-09 10:42:43 INFO  base.ActionHelper - Clicking: id_gender2
+2026-04-09 10:42:44 INFO  base.ActionHelper - Typing 'mini123' into: password
+2026-04-09 10:42:45 INFO  base.ActionHelper - Clicking: newsletter
+2026-04-09 10:42:45 INFO  base.ActionHelper - Clicking: optin
+2026-04-09 10:42:46 INFO  base.ActionHelper - Typing 'mini123' into: first_name
+2026-04-09 10:42:46 INFO  base.ActionHelper - Typing 'Cards' into: last_name
+2026-04-09 10:42:47 INFO  base.ActionHelper - Typing 'QA Corp' into: company
+2026-04-09 10:42:48 INFO  base.ActionHelper - Typing 'Abu Dhabi' into: address1
+2026-04-09 10:42:49 INFO  base.ActionHelper - Typing 'UAE' into: state
+2026-04-09 10:42:49 INFO  base.ActionHelper - Typing 'Abu Dhabi' into: city
+2026-04-09 10:42:50 INFO  base.ActionHelper - Typing '00000' into: zipcode
+2026-04-09 10:42:51 INFO  base.ActionHelper - Typing '1234567890' into: mobile_number
+2026-04-09 10:42:57 INFO  base.ActionHelper - Clicking: Create Account
+2026-04-09 10:42:58 INFO  pages.RegisterPage - Account Created Header is visible
+2026-04-09 10:42:58 INFO  base.ActionHelper - Clicking: Continue
+2026-04-09 10:43:19 ERROR pages.AccountPage - Logged in as is NOT visible due to exception: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //a[contains(text(),' Logged in as')]'
+(tried for 20 seconds with 500 milliseconds interval)
+2026-04-09 10:43:21 INFO  tests.TC01_RegisterUser - ========== END TEST ==========
+2026-04-09 10:43:21 INFO  tests.TC03_DeleteAccount - ========== START TEST ==========
+2026-04-09 10:43:27 INFO  pages.HomePage - Home page logo is visible
+2026-04-09 10:43:34 INFO  base.ActionHelper - Clicking: Signup / Login
+2026-04-09 10:43:35 INFO  pages.LoginPage - Login to your account is visible
+2026-04-09 10:43:36 INFO  base.ActionHelper - Typing 'mini123@gmail.com' into: 
+2026-04-09 10:43:37 INFO  base.ActionHelper - Typing 'mini123' into: 
+2026-04-09 10:43:42 INFO  base.ActionHelper - Clicking: Login
+2026-04-09 10:43:43 INFO  pages.AccountPage - Logged in as is visible
+2026-04-09 10:43:44 INFO  base.ActionHelper - Clicking: Delete Account
+2026-04-09 10:43:48 INFO  pages.DeleteAccountPage - Account Deleted! is visible
+2026-04-09 10:43:52 INFO  base.ActionHelper - Clicking: Continue
+2026-04-09 10:43:53 INFO  tests.TC03_DeleteAccount - ========== END TEST ==========
+2026-04-09 10:45:39 INFO  tests.TC01_RegisterUser - ========== START TEST ==========
+2026-04-09 10:45:47 INFO  pages.HomePage - Home page logo is visible
+2026-04-09 10:45:49 INFO  base.ActionHelper - Clicking: Signup / Login
+2026-04-09 10:45:50 INFO  pages.LoginPage - New User Signup! is visible
+2026-04-09 10:45:51 INFO  base.ActionHelper - Typing 'mini123' into: 
+2026-04-09 10:45:52 INFO  base.ActionHelper - Typing 'mini123@gmail.com' into: 
+2026-04-09 10:45:55 INFO  base.ActionHelper - Clicking: Signup
+2026-04-09 10:45:57 INFO  pages.RegisterPage - Fill in Account Information
+2026-04-09 10:45:57 INFO  base.ActionHelper - Clicking: id_gender2
+2026-04-09 10:45:58 INFO  base.ActionHelper - Typing 'mini123' into: password
+2026-04-09 10:46:00 INFO  base.ActionHelper - Clicking: newsletter
+2026-04-09 10:46:00 INFO  base.ActionHelper - Clicking: optin
+2026-04-09 10:46:01 INFO  base.ActionHelper - Typing 'mini123' into: first_name
+2026-04-09 10:46:01 INFO  base.ActionHelper - Typing 'Cards' into: last_name
+2026-04-09 10:46:02 INFO  base.ActionHelper - Typing 'QA Corp' into: company
+2026-04-09 10:46:03 INFO  base.ActionHelper - Typing 'Abu Dhabi' into: address1
+2026-04-09 10:46:04 INFO  base.ActionHelper - Typing 'UAE' into: state
+2026-04-09 10:46:05 INFO  base.ActionHelper - Typing 'Abu Dhabi' into: city
+2026-04-09 10:46:05 INFO  base.ActionHelper - Typing '00000' into: zipcode
+2026-04-09 10:46:06 INFO  base.ActionHelper - Typing '1234567890' into: mobile_number
+2026-04-09 10:46:12 INFO  base.ActionHelper - Clicking: Create Account
+2026-04-09 10:46:13 INFO  pages.RegisterPage - Account Created Header is visible
+2026-04-09 10:46:13 INFO  base.ActionHelper - Clicking: Continue
+2026-04-09 10:46:18 INFO  pages.AccountPage - Logged in as is visible
+2026-04-09 10:46:18 INFO  tests.TC01_RegisterUser - ========== END TEST ==========
+2026-04-09 10:46:18 INFO  tests.TC03_DeleteAccount - ========== START TEST ==========
+2026-04-09 10:46:25 INFO  pages.HomePage - Home page logo is visible
+2026-04-09 10:46:27 INFO  base.ActionHelper - Clicking: Signup / Login
+2026-04-09 10:46:28 INFO  pages.LoginPage - Login to your account is visible
+2026-04-09 10:46:28 INFO  base.ActionHelper - Typing 'mini123@gmail.com' into: 
+2026-04-09 10:46:29 INFO  base.ActionHelper - Typing 'mini123' into: 
+2026-04-09 10:46:37 INFO  base.ActionHelper - Clicking: Login
+2026-04-09 10:46:37 INFO  pages.AccountPage - Logged in as is visible
+2026-04-09 10:46:38 INFO  base.ActionHelper - Clicking: Delete Account
+2026-04-09 10:46:42 INFO  pages.DeleteAccountPage - Account Deleted! is visible
+2026-04-09 10:46:46 INFO  base.ActionHelper - Clicking: Continue
+2026-04-09 10:46:46 INFO  tests.TC03_DeleteAccount - ========== END TEST ==========
+2026-04-09 10:56:25 INFO  tests.TC01_RegisterUser - ========== START TEST ==========
+2026-04-09 10:56:36 INFO  pages.HomePage - Home page logo is visible
+2026-04-09 10:56:41 INFO  base.ActionHelper - Clicking: Signup / Login
+2026-04-09 10:56:42 INFO  pages.LoginPage - New User Signup! is visible
+2026-04-09 10:56:42 INFO  base.ActionHelper - Typing 'mini123' into: Name
+2026-04-09 10:56:43 INFO  base.ActionHelper - Typing 'mini123@gmail.com' into: Email Address
+2026-04-09 10:56:47 INFO  base.ActionHelper - Clicking: Signup
+2026-04-09 10:56:49 INFO  pages.RegisterPage - Fill in Account Information
+2026-04-09 10:56:50 INFO  base.ActionHelper - Clicking: title
+2026-04-09 10:56:50 INFO  base.ActionHelper - Typing 'mini123' into: password
+2026-04-09 10:56:51 INFO  base.ActionHelper - Clicking: newsletter
+2026-04-09 10:56:52 INFO  base.ActionHelper - Clicking: optin
+2026-04-09 10:56:52 INFO  base.ActionHelper - Typing 'mini123' into: first_name
+2026-04-09 10:56:54 INFO  base.ActionHelper - Typing 'Cards' into: last_name
+2026-04-09 10:56:55 INFO  base.ActionHelper - Typing 'QA Corp' into: company
+2026-04-09 10:56:55 INFO  base.ActionHelper - Typing 'Abu Dhabi' into: address1
+2026-04-09 10:56:56 INFO  base.ActionHelper - Typing 'UAE' into: state
+2026-04-09 10:56:57 INFO  base.ActionHelper - Typing 'Abu Dhabi' into: city
+2026-04-09 10:56:58 INFO  base.ActionHelper - Typing '00000' into: zipcode
+2026-04-09 10:56:59 INFO  base.ActionHelper - Typing '1234567890' into: mobile_number
+2026-04-09 10:57:07 INFO  base.ActionHelper - Clicking: Create Account
+2026-04-09 10:57:07 INFO  pages.RegisterPage - Account Created Header is visible
+2026-04-09 10:57:08 INFO  base.ActionHelper - Clicking: Continue
+2026-04-09 10:57:13 INFO  pages.AccountPage - Logged in as is visible
+2026-04-09 10:57:13 INFO  tests.TC01_RegisterUser - ========== END TEST ==========
+2026-04-09 10:57:13 INFO  tests.TC03_DeleteAccount - ========== START TEST ==========
+2026-04-09 10:57:22 INFO  pages.HomePage - Home page logo is visible
+2026-04-09 10:57:27 INFO  base.ActionHelper - Clicking: Signup / Login
+2026-04-09 10:57:27 INFO  pages.LoginPage - Login to your account is visible
+2026-04-09 10:57:28 INFO  base.ActionHelper - Typing 'mini123@gmail.com' into: Email Address
+2026-04-09 10:57:29 INFO  base.ActionHelper - Typing 'mini123' into: Password
+2026-04-09 10:57:37 INFO  base.ActionHelper - Clicking: Login
+2026-04-09 10:57:38 INFO  pages.AccountPage - Logged in as is visible
+2026-04-09 10:57:38 INFO  base.ActionHelper - Clicking: Delete Account
+2026-04-09 10:57:41 INFO  pages.DeleteAccountPage - Account Deleted! is visible
+2026-04-09 10:57:46 INFO  base.ActionHelper - Clicking: Continue
+2026-04-09 10:57:46 INFO  tests.TC03_DeleteAccount - ========== END TEST ==========

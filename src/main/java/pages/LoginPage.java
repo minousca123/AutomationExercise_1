@@ -26,7 +26,7 @@ public class LoginPage extends BasePage{
 	private WebElement loginBtn;
 	
 	public boolean isLoginPageVisible() {
-		 return isVisible(loginHeader);
+		 return isVisible(loginHeader, "Login to your account" );
 	}
 	
 	public void login(String email, String pass) {
@@ -48,7 +48,7 @@ public class LoginPage extends BasePage{
 	  @FindBy(xpath="//button[text()='Signup']") WebElement SignupBtn;
 	  
 	  public boolean isSignupVisible() {
-			 return isVisible(signupHeader);
+			 return isVisible(signupHeader, "New User Signup!");
 		}
 	    
 	  public void signup(String name, String email) {

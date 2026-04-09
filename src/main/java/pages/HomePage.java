@@ -13,13 +13,13 @@ public class HomePage extends BasePage {
 	}
 	
 	@FindBy(xpath = "//img")
-    WebElement homePageBanner;
+    WebElement homePageLogo;
 
 	@FindBy(xpath = "//a[@href='/login']")
 	WebElement signupLoginLink;
 
     public boolean isHomePageVisible() {
-        return isVisible(homePageBanner);
+        return isVisible(homePageLogo, "Home page logo");
     }
 	
 	public void clickSignUpLoginLink() {
